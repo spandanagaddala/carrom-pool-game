@@ -1,0 +1,66 @@
+:root {
+  --bg: #1e2a1a;
+  --board: #2d4a2d;
+  --board-wood: #6e4a2d;
+  --line: #e6d7a8;
+  --pocket: #101010;
+  --white: #f3f3f3;
+  --black: #191919;
+  --red: #d13d32;
+  --queen: #f7d34a;
+  --striker: #6ea8ff;
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at top, #2f3d2b, #101a12 58%);
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.game-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.hud {
+  width: 860px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.score-box {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+}
+
+.controls {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+canvas {
+  display: block;
+  background: linear-gradient(180deg, #2d4a2d, #244225);
+  border: 8px solid #7a4d2a;
+  border-radius: 18px;
+  box-shadow: 0 30px 55px rgba(0, 0, 0, 0.45);
+  cursor: crosshair;
+}
